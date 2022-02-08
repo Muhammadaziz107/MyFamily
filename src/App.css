@@ -1,0 +1,12 @@
+* {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
