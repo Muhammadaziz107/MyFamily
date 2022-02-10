@@ -1,0 +1,63 @@
+.sura-section {
+  left: 0;
+  margin: 30px auto;
+  padding: 40px 20px;
+  background-color: #faf2e7;
+  color: white;
+}
+
+.sura__heading {
+  width: 950px;
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #333333;
+  margin: 0 auto;
+}
+
+.sura__text {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: #333333;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sura__heading {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .sura__heading {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .sura__heading {
+    width: 400px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .sura__heading {
+    width: 300px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .sura-section {
+    padding: 20px;
+    padding-bottom: 5px;
+  }
+  .sura__text {
+    font-size: 12px;
+  }
+}
