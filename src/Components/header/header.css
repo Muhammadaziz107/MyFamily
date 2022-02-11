@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 19px 40px;
-  /* border-bottom: 1px solid black; */
+  z-index: 100;
 }
 
 .header__logo {
@@ -166,7 +166,6 @@
 
   .header__navbar__list__item:last-child {
     margin-top: 60px;
-    /* margin-bottom: auto; */
   }
 }
 
@@ -175,10 +174,15 @@
     font-size: 35px;
     line-height: 57px;
   }
+
+  .header__navbar__phone {
+    margin-right: 0;
+  }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 365px) {
   .header__navbar__phone {
     margin-left: 20px;
+    margin-right: 10px;
   }
 }

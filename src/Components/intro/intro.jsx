@@ -2,8 +2,8 @@ import "./intro.css";
 
 function Intro() {
   return (
-    <section class="intro__wrapper">
-      <div class="container">
+    <section className="intro__wrapper">
+      <div className="container">
         <div className="intro">
           <h1 className="intro__heading">MyFamily oila maktabi</h1>
           <p className="intro__text">

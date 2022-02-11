@@ -3,6 +3,10 @@
   font-style: normal;
   font-weight: 400;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .container {
   max-width: 1440px;
