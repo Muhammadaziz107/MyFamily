@@ -1,0 +1,98 @@
+
+/* TEACHERS SECTION */
+.teachers{
+  background-blend-mode: overlay;
+    background-color: #c9af89;
+    background-image: url("../../Assets/Images/Rectangle.png");
+ 
+  }
+
+  .teacher-wrapper{
+overflow-x: scroll;
+    display: flex;
+    padding: 20px 0;
+  }
+  
+  
+  .teacher{
+    display: flex;
+    width: 1000px;
+    height: 440px;
+    align-items: center;
+padding: 90px 80px;
+}
+
+.teacher__img{
+  height: 434px;
+width: 394px;
+box-shadow: -30px -30px 2px #DDC9AD;
+
+}
+
+
+.text-wrpper{
+  color: #ffffff;
+margin-left: 70px;
+width: 440px;
+padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.teacher__name{
+  font-family: "Bebas Neue", cursive;
+font-size: 36px;
+font-weight: 700;
+line-height: 36px;
+padding-bottom: 10px;
+
+}
+
+.teacher__description{
+  font-family: "HelveticaNeueCyr", cursive;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+
+}
+
+.teacher__company{
+  font-family: "HelveticaNeueCyr", cursive;
+font-size: 18px;
+font-weight: 400;
+line-height: 18px;
+padding-top: 40px;
+}
+
+.btn-wrapper{
+  position: relative;
+  width: 200px;
+  bottom: -40px;
+  left: 1000px;
+  /* right: 0; */
+  display: flex;
+}
+
+.prev, .next{
+  background-color: #A76BC7;
+  background-image:url('../../Assets/Images/arrov.svg');
+  background-position: center;
+/* background-size:12px 20px; */
+  background-repeat: no-repeat;
+border: none;
+width: 80px;
+height: 80px;
+border-radius:50%;
+
+}
+
+.next{
+  transform: rotate(180deg);
+  margin-left: 15px;
+}
+
+
+
