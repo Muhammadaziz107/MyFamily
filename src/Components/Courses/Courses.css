@@ -65,6 +65,7 @@ max-width: 1220px;
 }
 
 .card__btn {
+  z-index: 3;
   background: #a76bc7;
   color: #ffffff;
   font-family: "HelveticaNeueCyr", cursive;
@@ -81,6 +82,7 @@ max-width: 1220px;
   border-radius: 50%;
   z-index: 50;
   height: 230px;
+  width: 230px;
 }
 
 .img-wrapper::before {
@@ -140,10 +142,146 @@ max-width: 1220px;
   border-bottom: 1px solid #333333;
 }
 
+@media only screen and (max-width: 1240px) {
+  .card-wrapper{
+    width: 100%; 
+  }
+.card{
+  width: 44.1%;
+}
+}
 
 
-@media only screen and (max-width: 400px) {
-  .card {
-    width: 360px;
+@media only screen and (max-width: 1226px) {
+  .courses .container{
+    width: 85%;
+    padding: auto 2px;
+  }
+
+  .card-wrapper{
+   padding: 0;
+display: flex;
+  }
+
+  .card{
+    margin: 10px auto;
+  padding: 15px 10px 28px 10px;
+    width: 46%;
+  }
+
+  .courses__title{
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+
+
+  }
+
+  .courses__subtitle{
+    width: 80%;
+    padding: 0 5px;
+  }
+.card__btn{
+  margin-top: 5px;
+  padding: 8px, 5px, 6px, 5px;
+}
+  .img-wrapper::before{
+right: 50px;
+ 
+}
+  .img-wrapper::after{
+  right: 90px;
+  }
+  .card__img, .img-wrapper::before, .img-wrapper::after {
+    height: 150px;
+width: 150px;
+  }
+
+  .card__title{
+font-size: 34px;
+line-height: 41px;
+width: 75%;
+  }
+
+  .card__description{
+    width: 97%;
   }
 }
+
+
+@media only screen and (max-width: 850px) {
+  .card-wrapper{
+    box-sizing: border-box;
+    width: 100%;
+  }
+.card{
+  width: 100%;
+  margin-right: 0;
+}
+.card__title{
+  width:85%;
+}
+.card__description{
+  width: 80%;
+}
+}
+
+@media only screen and (max-width: 420px) {
+  .courses .container{
+    width: 85%;
+    padding: auto 2px;
+  }
+
+  .card-wrapper{
+   padding: 0;
+
+  }
+
+  .card{
+    margin: 5px auto;
+  padding: 15px 10px 28px 10px;
+    width: 100%;
+  }
+
+  .courses__title{
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px;
+
+
+  }
+
+  .courses__subtitle{
+    width: 80%;
+    padding: 0 5px;
+  }
+.card__btn{
+  margin-top: 5px;
+  padding: 8px, 5px, 6px, 5px;
+}
+  .img-wrapper::before{
+right: 50px;
+ 
+}
+  .img-wrapper::after{
+  right: 90px;
+  }
+  .card__img, .img-wrapper::before, .img-wrapper::after {
+    height: 150px;
+width: 150px;
+  }
+
+  .card__title{
+font-size: 34px;
+line-height: 41px;
+width: 75%;
+  }
+
+  .card__description{
+    width: 97%;
+  }
+}
+
+
