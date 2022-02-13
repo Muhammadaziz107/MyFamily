@@ -122,7 +122,8 @@
 
   .why-choise__heading {
     width: 250px;
-    font-size: 26px;
+    font-size: 22px;
+    line-height: 30px;
     margin-left: 0;
   }
 

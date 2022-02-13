@@ -1,0 +1,44 @@
+.teachers {
+  background-image: url(../../Assets/Images/Rectangle.png);
+  background-color: #c9af89;
+  background-blend-mode: overlay;
+  background-size: cover;
+  padding: 80px;
+  margin: 50px 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 550px;
+  padding: 0 50px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-left: -35px;
+  padding: 20px;
+}
+
+.slider__img {
+  object-fit: cover;
+  -webkit-box-shadow: -30px -30px 0px -5px rgba(250, 242, 231, 0.7);
+  -moz-box-shadow: -30px -30px 0px -5px rgba(250, 242, 231, 0.7);
+  box-shadow: -30px -30px 0px -5px rgba(250, 242, 231, 0.7);
+}
+
+.swiper-slide {
+  width: 80%;
+}
