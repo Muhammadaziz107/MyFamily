@@ -1,9 +1,8 @@
-// import { useState } from 'react';
+
 import './Teachers.css'
-// import pexels from '../../Assets/Images/pexels-monstera-5997151.png'
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/css';
+
 import {teachers} from '../data'
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,7 +27,7 @@ function Teachers() {
                          <div className="text-wrpper">
                          <h3 className="teacher__name">{e.teacher__name}</h3>
                                 <p className="teacher__description">{e.description}</p>
-                                <b href="" className="teacher__company">"{e.company__name}" oila maktabi</b>
+                                <a href="/" className="teacher__company">"{e.company__name}" oila maktabi</a>
                          </div>
                             </li>
                         

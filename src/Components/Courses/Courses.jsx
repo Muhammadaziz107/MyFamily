@@ -28,7 +28,7 @@ function Courses() {
                                 </div>
                                 <h3 className="card__title">{e.title}</h3>
                                 <p className="card__description">{e.subtitle}</p>
-                                <b href="" className="card__link">Batafsil</b>
+                                <a href="/" className="card__link">Batafsil</a>
                             </li>
                         )
                     })}
