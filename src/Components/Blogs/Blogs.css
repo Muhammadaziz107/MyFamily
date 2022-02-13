@@ -1,0 +1,107 @@
+.blog {
+  text-align: center;
+  background-color: #ffffff;
+  background-blend-mode: overlay;
+padding: 150px 0;
+
+
+}
+
+.blogs-section{
+  background-blend-mode: overlay;
+  background-color: red;
+  height: 620px;
+  padding: 0;
+}
+
+.blog__title {
+  letter-spacing: 0em;
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.blog__subtitle {
+  margin: 0 auto;
+  font-family: "HelveticaNeueCyr";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #333333;
+  width: 500px;
+}
+
+.blog-card-wrapper {
+  margin: 50px auto;
+padding: 0;
+  display: flex;
+width: 1200px;
+height: 459px;
+  position: relative;
+  flex-wrap: wrap;
+}
+.blog-card {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 459px;
+  width: 590px;
+  padding: 30px 20px;
+  border-radius: 5px;
+  border-radius: 55px;
+  background-image: linear-gradient(
+    359.72deg,
+    rgba(0, 0, 0, 0.8) 3.88%,
+    rgba(0, 0, 0, 0) 41.54%
+    );
+  margin: 0 20px 20px 0;
+  text-align: left;
+  color: #ffffff;
+  z-index: -20px;
+}
+
+.blog-card:nth-child(2),
+.blog-card:last-child {
+  height: 220px;
+margin: 0;
+}
+
+ .blog-card:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.blog-card__img {
+  left: 0;
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  border-radius:5px ;
+  object-fit: cover;
+  
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
+.blog-card__title {
+  font-family: "HelveticaNeueCyr", cursive;
+  font-size: 22px;
+  font-weight: 550;
+  line-height: 30px;
+  text-align: left;
+}
+
+.blog-card__link {
+  font-family: "HelveticaNeueCyr", cursive;
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 18px;
+  text-decoration: none;
+}

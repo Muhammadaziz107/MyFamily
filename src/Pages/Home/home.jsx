@@ -7,6 +7,8 @@ import Sura from "../../Components/sura/sura";
 import JeromeBell from "../../Components/JeromeBell/JeromeBell";
 import Footer from "../../Components/footer/footer";
 import WhyChoise from "../../Components/whyChoise/whyChoise";
+import Courses from "../../Components/Courses/Courses";
+import Blogs from "../../Components/Blogs/Blogs";
 import Teachers from "../../Components/teacher/teachers";
 
 function Home() {
@@ -20,6 +22,8 @@ function Home() {
         <Intro />
         <Sura />
         <WhyChoise />
+        <Courses />
+        <Blogs />
         <Teachers />
         <JeromeBell />
       </section>
