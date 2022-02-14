@@ -229,19 +229,14 @@ width: 75%;
 
 @media only screen and (max-width: 420px) {
   .courses .container{
-    width: 85%;
-    padding: auto 2px;
+    width: 88%;
   }
 
-  .card-wrapper{
-   padding: 0;
-
-  }
 
   .card{
     margin: 5px auto;
   padding: 15px 10px 28px 10px;
-    width: 100%;
+    width: 500px;
   }
 
   .courses__title{
@@ -254,7 +249,7 @@ line-height: 36px;
   }
 
   .courses__subtitle{
-    width: 80%;
+    width: 83%;
     padding: 0 5px;
   }
 .card__btn{
