@@ -114,6 +114,9 @@
     bottom: 0;
     position: absolute;
     background-color: #c9af89;
+    background-image: url(../../Assets/Images/Rectangle.png);
+    background-blend-mode: overlay;
+
     padding: 60px 20px;
   }
 
@@ -162,6 +165,7 @@
 
   .header__navbar__phone--active {
     display: block;
+    margin-top: 10px;
   }
 
   .header__navbar__list__item:last-child {
@@ -174,15 +178,18 @@
     font-size: 35px;
     line-height: 57px;
   }
-
-  .header__navbar__phone {
-    margin-right: 0;
-  }
 }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 400px) {
   .header__navbar__phone {
     margin-left: 20px;
     margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .header__navbar__phone {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

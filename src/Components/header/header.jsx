@@ -56,7 +56,7 @@ function Header() {
                   </NavLink>
                 </li>
                 <li className="header__navbar__list__item">
-                  <NavLink className="header__navbar__list__item__link" to="/call">
+                  <NavLink className="header__navbar__list__item__link" to="/contact">
                     Aloqa
                   </NavLink>
                 </li>

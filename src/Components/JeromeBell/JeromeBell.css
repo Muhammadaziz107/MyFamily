@@ -5,6 +5,9 @@
   background-color: #faf2e7;
   color: white;
 }
+.note {
+  margin: 100px 0 200px 0;
+}
 
 .sura__heading {
   width: 950px;
