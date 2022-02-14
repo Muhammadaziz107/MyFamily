@@ -17,7 +17,6 @@ function Home() {
       <header>
         <Header />
       </header>
-
       <section>
         <Intro />
         <Sura />
