@@ -21,9 +21,9 @@ function Home() {
         <Intro />
         <Sura />
         <WhyChoise />
-        <Courses />
-        <Blogs />
-        <Teachers />
+        {/* <Courses /> */}
+        {/* <Blogs /> */}
+        {/* <Teachers /> */}
         <JeromeBell />
       </section>
 
