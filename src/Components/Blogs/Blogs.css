@@ -176,8 +176,7 @@ padding: 0;
 
 @media only screen and (max-width: 420px) {
   .blog .container{
-    width: 375px;
-padding: 0;
+    width: 88%;
   }
   .blog__title{
     font-size: 36px;
@@ -186,7 +185,7 @@ padding: 0;
     width: 95%;
   }
 .blog-card-wrapper{
-  width: 360px;
+  width: 100%;
   height:900px;
 }
 
@@ -206,7 +205,7 @@ padding: 0;
     position: relative;
   }
 .blog-card__title{
-  width: 305px;
+  width: 92%;
 }
 
 .blog-card__title {
