@@ -8,7 +8,6 @@ import JeromeBell from "../../Components/JeromeBell/JeromeBell";
 import Footer from "../../Components/footer/footer";
 import Courses from "../../Components/Courses/Courses";
 import Blogs from "../../Components/Blogs/Blogs";
-
 import WhyChoise from "../../Components/whyChoise/whyChoise";
 import Teachers from "../../Components/teacher/teachers";
 
@@ -25,7 +24,7 @@ function Home() {
           <WhyChoise />
           <Courses />
           <Blogs />
-          {/* <Teachers /> */}
+          <Teachers />
           <JeromeBell />
         </section>
 

@@ -109,7 +109,6 @@
     display: block;
     height: 1000px;
     top: 84px;
-    flex-wrap: 1;
     left: 0;
     right: 0;
     bottom: 0;
@@ -166,7 +165,6 @@
 
   .header__navbar__phone--active {
     display: block;
-    flex-wrap: 1;
     margin-top: 10px;
   }
 

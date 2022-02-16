@@ -1,0 +1,283 @@
+.contact {
+  margin-top: 82px;
+  height: 650px;
+  background-color: #ffffff;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.contact .container {
+  position: relative;
+  padding: 0;
+  display: flex;
+}
+
+.contact-img-wrapper {
+  width: 40%;
+  padding: 60px 5%;
+  text-align: center;
+  background-color: #c9af89;
+  background-image: url("../../Assets/Images/Rectangle.png");
+  background-blend-mode: overlay;
+}
+
+.contact__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact__box {
+  width: 45%;
+  padding: 130px 100px 0;
+  padding-bottom: 20px;
+}
+
+.contact__title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0;
+}
+
+.contact__subtitle {
+  font-family: "HelveticaNeueCyr", cursive;
+  line-height: 16px;
+  margin: 10px 0 40px;
+  color: #333333;
+}
+.contact__form {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+.contact__input {
+  width: 100%;
+  border-radius: 97px;
+  box-sizing: border-box;
+  padding: 15px 30px;
+  border: 1px solid #cccccc;
+  outline: none;
+  background-color: transparent;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+.contact__input:nth-child(2) {
+  margin: 0 0 8px 0;
+}
+.phonelabel {
+  margin: 0 0 12px 30px;
+  font-weight: 300;
+  line-height: 11, 86px;
+  font-size: 12px;
+  float: left;
+  color: transparent;
+  position: relative;
+  left: 0;
+}
+.contact__input::placeholder,
+.contact__select {
+  font-family: "HelveticaNeueCyr", cursive;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #cccccc;
+}
+
+.contact__btn {
+  font-weight: 550;
+  border-radius: 100px;
+  color: #ffffff;
+  padding: 17px 40px;
+  background: #a76bc7;
+  border: none;
+  float: right;
+}
+.contact__form-wrapper {
+  height: 470px;
+  margin-bottom: 20px;
+}
+.contact__footer {
+  position: absolute;
+  bottom: 20px;
+  width: 35%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon-wrapper{
+    display: flex;  
+    align-items: center;
+    width: 100%;
+}
+
+.icon {
+  width: 22px;
+  margin-right: 30px;
+}
+
+.addres {
+  color: #333333;
+  width: 70%;
+  text-align: right;
+}
+
+.success{
+margin-top: 20px;
+}
+.success__title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  color: #469264;
+  margin: 0;
+}
+
+.success__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #333333;
+  margin: 10px 0;
+}
+
+
+@media only screen and (max-width: 1035px) {
+    .contact-img-wrapper {
+width: 70%;
+padding: 0;
+  background-image: url("../../Assets/Images/famliy.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-blend-mode: normal;
+object-fit:cover ;
+
+      }
+      .contact__img{
+          display: none;
+      }
+      .success{
+        padding-top: 100px;
+        }
+    .contact__box{
+        box-sizing: border-box;
+        width: 100%;
+      height: 700px;
+      padding: 80px 30px;
+    }
+    .contact__footer {
+      text-align: center;
+        width: 50%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        bottom: 20px;
+      }
+      .icon-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: center;
+      }
+  }
+
+@media only screen and (max-width: 850px) {
+    .contact-img-wrapper {
+        display: none;
+      }
+    
+    .contact__box{
+        box-sizing: border-box;
+        width: 100%;
+      height: 700px;
+      padding: 80px 40px;
+    }
+    .success{
+        padding-top: 130px;
+        }
+    .contact__footer {
+      text-align: center;
+        width: 80%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        bottom: 20px;
+      }
+      .icon-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: space-between;
+      }
+      .fasebok {
+        margin: 0;
+      }
+      .addres {
+        width: 80%;
+        text-align: center;
+      }
+  }
+
+@media only screen and (max-width: 420px) {
+  .contact .container {
+    width: 88%;
+  }
+
+  .contact-img-wrapper {
+    display: none;
+  }
+
+  .contact__box {
+    width: 100%;
+    padding: 50px 2px 0;
+    height: 700px;
+  }
+  .contact__title {
+    font-size: 36px;
+    width: 90%;
+  }
+
+  .contact__subtitle {
+    font-size: 14px;
+  }
+
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__footer {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    bottom: 30px;
+  }
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+  .fasebok {
+    margin: 0;
+  }
+  .addres {
+    width: 65%;
+    text-align: center;
+  }
+}
