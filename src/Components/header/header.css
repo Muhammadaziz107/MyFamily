@@ -1,10 +1,17 @@
-.header__wrapper {
-  width: 100%;
+header{
   top: 0;
   left: 0;
   right: 0;
   position: fixed;
-  background-color: #fff;
+  z-index: 10;
+height: 82px;
+width: 100%;
+background-color: #ffffff;
+
+display: inline-block;
+}
+.header__wrapper {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
