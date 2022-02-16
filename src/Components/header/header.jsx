@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <>
-      <div className="header">
+      <div className="header ">
         <div className="header__wrapper container">
           <div className="hamburger">
             <Hamburger

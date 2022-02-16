@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('http://fonts.cdnfonts.com/css/helveticaneuecyr-2');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("http://fonts.cdnfonts.com/css/helveticaneuecyr-2");
 
 * {
   font-family: "HelveticaNeueCyr", cursive;
@@ -15,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1220px;
   /* width: 100%; */
   margin: 0 auto;
   padding: 0 20px;
