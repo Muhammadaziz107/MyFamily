@@ -177,6 +177,8 @@ padding: 0;
 @media only screen and (max-width: 420px) {
   .blog .container{
     width: 88%;
+
+
   }
   .blog__title{
     font-size: 36px;

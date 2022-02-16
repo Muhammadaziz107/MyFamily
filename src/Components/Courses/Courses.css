@@ -228,15 +228,18 @@ width: 75%;
 }
 
 @media only screen and (max-width: 420px) {
+
   .courses .container{
+
     width: 88%;
+    background-color: red;
   }
 
 
   .card{
     margin: 5px auto;
   padding: 15px 10px 28px 10px;
-    width: 500px;
+    width: 100%;
   }
 
   .courses__title{
