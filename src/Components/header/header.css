@@ -1,5 +1,5 @@
 .header__wrapper {
-  width: 100%;
+  max-width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -109,6 +109,7 @@
     display: block;
     height: 1000px;
     top: 84px;
+    flex-wrap: 1;
     left: 0;
     right: 0;
     bottom: 0;
@@ -165,6 +166,7 @@
 
   .header__navbar__phone--active {
     display: block;
+    flex-wrap: 1;
     margin-top: 10px;
   }
 

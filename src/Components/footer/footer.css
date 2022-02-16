@@ -166,7 +166,7 @@
   }
 
   .footer__adress {
-    order: 2;
+    order: 0;
     display: flex;
     flex-direction: row;
   }
