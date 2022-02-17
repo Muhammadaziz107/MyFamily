@@ -23,7 +23,13 @@ function Contact() {
       <section className="contact">
         <div className="container">
           <div className="contact-img-wrapper">
-            <img src={family} alt="family" className="contact__img" />
+            <img
+              src={family}
+              alt="family"
+              className="contact__img"
+              width="490"
+              height="524"
+            />
           </div>
           <div className="contact__box">
             <div className="success d-none">
