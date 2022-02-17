@@ -56,6 +56,7 @@ function Teachers() {
               </div>
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div className="swiper__wrapper">
               <img
