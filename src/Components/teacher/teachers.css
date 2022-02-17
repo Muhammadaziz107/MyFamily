@@ -5,11 +5,12 @@
   background-size: cover;
   padding: 80px;
   margin: 50px 0;
+  overflow: hidden;
 }
 
 .swiper {
   width: 100%;
-  height: 550px;
+  height: 100%;
   padding: 0 50px;
 }
 
@@ -32,6 +33,10 @@
   padding: 20px;
 }
 
+.swiper__wrapper {
+  display: flex;
+  align-items: center;
+}
 .slider__img {
   object-fit: cover;
   -webkit-box-shadow: -30px -30px 0px -5px rgba(250, 242, 231, 0.7);
@@ -39,6 +44,122 @@
   box-shadow: -30px -30px 0px -5px rgba(250, 242, 231, 0.7);
 }
 
-.swiper-slide {
-  width: 80%;
+.slider__info {
+  width: 450px;
+  margin-left: 80px;
+}
+
+.slider__line {
+  display: block;
+  max-width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: #fff;
+  margin: 30px 0;
+}
+
+.slider__heading {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.slider__text {
+  text-align: left;
+  width: 450px;
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.slider__teacher-name {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.teachers_prev-btn {
+  background-color: #fff;
+}
+
+.teachers__btnControllers {
+  width: 200px;
+  margin-left: auto;
+}
+
+.teachers__btnControllers__next {
+  transform: rotate(-180deg);
+  background-color: #a76bc7;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  margin-left: 20px;
+}
+.teachers__btnControllers__prev {
+  background-color: #a76bc7;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.teachers__btnControllers__next:disabled {
+  opacity: 0.5;
+}
+.teachers__btnControllers__prev:disabled {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1135px) {
+  .swiper__wrapper {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .slider__info {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .swiper-slide {
+    margin-left: 0;
+  }
+
+  .teachers {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .teachers {
+    padding: 50px 0px;
+  }
+
+  .swiper__wrapper {
+    margin-left: -150px;
+  }
+
+  .slider__img {
+    width: 215px;
+    height: 215px;
+  }
+
+  .slider__heading {
+    font-size: 32px;
+  }
+  .slider__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
