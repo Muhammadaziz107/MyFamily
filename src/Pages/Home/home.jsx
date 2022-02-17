@@ -10,13 +10,11 @@ import Footer from "../../Components/footer/footer";
 import WhyChoise from "../../Components/whyChoise/whyChoise";
 import Courses from "../../Components/Courses/Courses";
 import Blogs from "../../Components/Blogs/Blogs";
-// import Teachers from "../../Components/teacher/teachers";
-
+import Teachers from "../../Components/teacher/teachers";
 
 function Home() {
   return (
     <div>
-
       <header>
         <Header />
       </header>
@@ -25,9 +23,9 @@ function Home() {
         <Sura />
         <WhyChoise />
         <Courses />
-        <Blogs /> 
-        {/* <Teachers /> */}
-         <JeromeBell />
+        <Blogs />
+        <Teachers />
+        <JeromeBell />
       </section>
 
       <footer>
