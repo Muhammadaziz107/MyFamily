@@ -50,6 +50,7 @@ function Contact() {
                   className="contact__input"
                   placeholder="F.I.SH"
                   required
+                  utoComplete="off"
                 />
                 <input
                   type="text"
@@ -57,6 +58,7 @@ function Contact() {
                   onKeyUp={() => wrongphone()}
                   placeholder="Telefon raqam"
                   id="phone"
+                  autoComplete="off"
                   required
                 />
                 <label htmlFor="phone" id="label" className="phonelabel">
