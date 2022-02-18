@@ -10,12 +10,18 @@ function About() {
   return (
     <>
       <div className="about">
-        <Header />
-        <AboutIntro />
-        <SchoolAim />
-        <Courses />
-        <Author />
-        <Footer />
+        <header>
+          <Header />
+        </header>
+        <section>
+          <AboutIntro />
+          <SchoolAim />
+          <Courses />
+          <Author />
+        </section>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   );
