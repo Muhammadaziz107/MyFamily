@@ -1,0 +1,136 @@
+.container {
+  width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 345px;
+  }
+}
+
+.school-aim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .school-aim {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+}
+
+.school-aim_title {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 550;
+  font-size: 48px;
+  color: #333333;
+  line-height: 65px;
+  width: 497px;
+  height: 130px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .school-aim_title {
+    font-size: 26px;
+    font-weight: 550;
+    line-height: 35px;
+    width: 248px;
+    height: 70px;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+}
+
+.school-aim_icon {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: #C9AF89;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 15px 15px rgba(159, 132, 92, 0.15);
+          box-shadow: 0px 15px 15px rgba(159, 132, 92, 0.15);
+}
+
+.school-aim_icon::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../../Assets/Images/oila-maqsadi-icon.png") no-repeat center;
+}
+
+@media screen and (max-width: 768px) {
+  .school-aim_icon {
+    width: 50px;
+    height: 50px;
+  }
+  .school-aim_icon::before {
+    background: url("../../../Assets/Images/oila-maqsadi-icon-mob.png") no-repeat center;
+  }
+}
+
+.school-aim_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.school-aim_info {
+  width: 274.39px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .school-aim_info {
+    margin-left: 20px;
+  }
+}
+
+.school-aim_info_title {
+  font-family: 'HelveticaNeueCyr';
+  font-size: 24px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 23.71px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .school-aim_info_title {
+    font-size: 20px;
+  }
+}
+
+.school-aim_info_text {
+  font-family: 'HelveticaNeueCyr';
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 30px;
+  width: 500px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .school-aim_info_text {
+    width: 274.39px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
