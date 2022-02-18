@@ -1,0 +1,296 @@
+@import '../../../Assets/scss/container.scss';
+@import '../../../Assets/scss/color.scss';
+
+.display-show{
+   display: block !important;
+}
+
+.our-courses{
+   background-image: url('../../../Assets/Images/bg-pixell.svg');
+   background-color: #C9AF89;
+   padding-bottom: 68px;
+
+   @media screen and (max-width: 768px) {
+      padding-bottom: 50px;
+   }
+}
+
+.courses{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   @media screen and (max-width: 768px) {
+      width: 365px;
+      padding: 0;
+   }
+}
+
+
+.courses__title{
+   font-family: 'Bebas Neue';
+   font-size: 50px;
+   font-weight: 700;
+   line-height: 50px;
+   color: #ffffff;
+   text-align: center;
+   margin-top: 90px;
+   margin-bottom: 5px;
+
+   @media screen and (max-width: 768px) {
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 36px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+   }
+}
+
+.courses__sub-title{
+   font-family: 'HelveticaNeueCyr';
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28px;
+   text-align: center;
+   color: #ffffff;
+   width: 530px;
+   margin: 0 auto;
+   margin-bottom: 40px;
+
+   @media screen and (max-width: 768px) {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      width: 100%;
+      margin-bottom: 30px;
+   }
+}
+
+.courses-list{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   list-style: none;
+   padding: 0;
+
+   @media screen and (max-width: 768px) {
+      flex-direction: column;
+   }
+}
+
+.courses-item{
+   width: 540px;
+   height: 464px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   margin-right: 20px;
+   padding: 20px 30px 50px 30px;
+
+      &:nth-child(2n){
+         margin-right: 0;
+      }
+
+      &:nth-last-child(1){
+         margin-bottom: 0;
+      }
+      &:nth-last-child(2){
+         margin-bottom: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+         display: none; 
+         width: 332px;
+         height: 421px;
+         padding: 15px 23px 28px 10px;
+         margin: 0;
+         margin-bottom: 5px;
+         margin-left: -9.5px;
+
+         &:nth-child(-n+4){
+            display: block;
+         }
+
+         &:nth-last-child(2){
+            margin-bottom: 5px;
+         }
+      }
+}
+
+.courses-item__top{
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 3px;
+   z-index: 1;
+
+   @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+   }
+}
+
+.courses-item__teacher{
+   display: inline-block;
+   font-family: 'HelveticaNeueCyr';
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 14px;
+   text-align: center;
+   color: #ffffff;
+   padding: 10px 10px 8px 10px;
+   background-color: #A76BC7;
+   opacity: 0.8;
+   border-radius: 10px;
+   margin: 0;
+   margin-top: auto;
+   margin-bottom: 3px;
+
+   @media screen and (max-width: 768px) {
+      font-size: 12px;
+      line-height: 12px;
+      width: 75px;
+      padding: 8px 5px;
+      border-radius: 5px;
+      margin-bottom: 18px;
+   }
+}
+
+.courses-item__img{
+   position: relative;
+   display: inline-block;
+   width: 230px;
+   height: 230px;
+   margin-left: auto;
+   border-radius: 50%;
+   background-image: url('../../../Assets/Images/bolalarga.jpg');
+
+      &::after{
+         position: absolute;
+         content: '';
+         width: 100%;
+         height: 100%;
+         border-radius: 50%;
+         top: 0;
+         left: -70px;
+         background-color: #FAF2E7;
+         opacity: 0.8;
+         z-index: -1;
+      }
+
+      &::before{
+         position: absolute;
+         content: '';
+         width: 100%;
+         height: 100%;
+         border-radius: 50%;
+         border: 3px dashed#FAF2E7;
+         top: 0;
+         left: -120px;
+         opacity: 0.7;
+         z-index: -2;
+      }
+
+      @media screen and (max-width: 768px) {
+         width: 150px;
+         height: 150px;
+         background-image: url('../../../Assets/Images/bolalarga-mobile.jpg');
+
+         &::after{
+            left: -50px;
+         }
+
+         &::before{
+            left: -90px;
+         }
+      }  
+}
+
+.courses-item__info{
+   width: 432px;
+
+   @media screen and (max-width: 768px) {
+      width: 345px;
+      margin: 0;
+   }
+}
+
+.courses-item__title{
+   font-family: 'Bebas Neue';
+   font-size: 45px;
+   font-weight: 400;
+   line-height: 54px;
+   margin-top: 0;
+   margin-bottom: 0;
+
+   @media screen and (max-width: 768px) {
+      font-size: 34px;
+      line-height: 41px;
+   }
+}
+
+.courses-item__subtitle{
+   font-family: 'Bebas Neue';
+   font-size: 45px;
+   font-weight: 400;
+   line-height: 54px;
+   margin: 0;
+
+   @media screen and (max-width: 768px) {
+      font-size: 34px;
+      line-height: 41px;
+   }
+}
+
+.courses-item__description{
+   font-family: 'HelveticaNeueCyr';
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28px;
+   color: $blurblack;
+   margin: 5px 0 16px;
+   
+   @media screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+      width: 345px;
+      margin-top: 0;
+   }
+}
+
+.courses-item__edit{
+   font-family: 'HelveticaNeueCyr';
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 17.78px;
+   color: $blurblack;
+   text-decoration: underline;
+   background: none;
+   border: transparent;
+   margin: 0;
+   padding: 0;
+
+   @media screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 20px;
+   }
+}
+
+.course-list_show-more{
+   display: none;
+   font-family: 'HelveticaNeueCyr';
+   font-size: 16px;
+   font-weight: 550;
+   line-height: 16px;
+   color: #ffffff;
+   width: 187px;
+   margin: 0 auto;
+   margin-top: 19px;
+   padding: 18px 40px;
+   background-color: #A76BC7;
+   border-radius: 50px;
+   border: none;
+
+   @media screen and (max-width: 768px) {
+      display: block;
+   }
+}
