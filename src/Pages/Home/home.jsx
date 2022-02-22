@@ -14,7 +14,7 @@ import Teachers from "../../Components/teacher/teachers";
 
 function Home() {
   return (
-    <div>
+    <div className="home-page">
       <header>
         <Header />
       </header>
