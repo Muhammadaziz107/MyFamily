@@ -1,4 +1,7 @@
 import React from "react";
+import "./blogs.css";
+
+//components
 import Header from "../../Components/header/header";
 import Footer from "../../Components/footer/footer";
 import Blogss from "../../Components/blogsPage/blogs";

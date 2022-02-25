@@ -1,8 +1,8 @@
+import React from "react";
 import "./home.css";
 
 //components
 import Header from "../../Components/header/header";
-// import Contact from "../../Components/Contact/Contact";
 import Intro from "../../Components/intro/intro";
 import Sura from "../../Components/sura/sura";
 import JeromeBell from "../../Components/JeromeBell/JeromeBell";

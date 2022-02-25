@@ -50,7 +50,7 @@ function Contact() {
                   className="contact__input"
                   placeholder="F.I.SH"
                   required
-                  utoComplete="off"
+                  autoComplete="off"
                 />
                 <input
                   type="text"

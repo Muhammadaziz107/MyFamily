@@ -1,13 +1,5 @@
-.about {
-  height: 100vh;
-  max-width: 1440px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 @media only screen and (max-width: 768px) {
   .about {
     width: 375px;
   }
 }
-/*# sourceMappingURL=style.css.map */

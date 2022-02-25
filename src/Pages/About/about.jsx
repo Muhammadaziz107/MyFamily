@@ -1,4 +1,6 @@
 import "./style.css";
+
+//components
 import Header from "../../Components/header/header";
 import AboutIntro from "../../Components/about-us/intro/intro";
 import SchoolAim from "../../Components/about-us/school-aim/school-aim";

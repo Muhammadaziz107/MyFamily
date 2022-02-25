@@ -1,7 +1,12 @@
 .contact {
   margin-top: 82px;
   height: 650px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: #c9af89;
+  background-image: url("../../Assets/Images/Rectangle.png");
+  background-size: cover;
+  overflow: hidden;
+  background-blend-mode: overlay;
 }
 
 .d-none {
@@ -16,17 +21,14 @@
   position: relative;
   padding: 0;
   display: flex;
+  width: 100%;
+  max-width: 100%;
 }
 
 .contact-img-wrapper {
-  width: 40%;
+  width: 50%;
   padding: 60px;
   text-align: center;
-  background-color: #c9af89;
-  background-image: url("../../Assets/Images/Rectangle.png");
-  background-size: cover;
-  overflow: hidden;
-  background-blend-mode: overlay;
 }
 
 .contact__img {
@@ -36,9 +38,10 @@
 }
 
 .contact__box {
-  width: 45%;
+  width: 50%;
   padding: 130px 100px 0;
   padding-bottom: 20px;
+  background-color: #fff;
 }
 
 .contact__title {

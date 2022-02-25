@@ -1,7 +1,15 @@
-.container {
-  width: 1220px;
-  margin-left: auto;
-  margin-right: auto;
+.our-courses {
+  background-image: url("../../../Assets/Images/bg-pixell.svg");
+  background-color: #c9af89;
+  background-blend-mode: overlay;
+  padding-bottom: 68px;
+}
+
+.courses {
+  background-image: url("../../../Assets/Images/bg-pixell.svg");
+  background-color: #c9af89;
+  background-blend-mode: overlay;
+  padding-bottom: 68px;
 }
 
 @media screen and (max-width: 768px) {
@@ -12,12 +20,6 @@
 
 .display-show {
   display: block !important;
-}
-
-.our-courses {
-  background-image: url("../../../Assets/Images/bg-pixell.svg");
-  background-color: #c9af89;
-  padding-bottom: 68px;
 }
 
 @media screen and (max-width: 768px) {
