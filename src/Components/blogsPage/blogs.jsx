@@ -1,6 +1,4 @@
-// import { useState } from 'react';
 import "./blogs.css";
-
 import { blogs } from "../data";
 let blog = blogs.slice(0, 3);
 

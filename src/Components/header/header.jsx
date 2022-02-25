@@ -1,8 +1,9 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import "./header.css";
+
+//components
 import { NavLink } from "react-router-dom";
 import Hamburger from "hamburger-react";
-
 import Logo from "../../Assets/Images/logo.svg";
 
 function Header() {
@@ -28,7 +29,6 @@ function Header() {
               onToggle={evt => {
                 elNavbar.current.classList.toggle("header__navbar--active");
               }}
-              
             />
           </div>
           {/* ============ */}
