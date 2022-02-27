@@ -11,6 +11,7 @@ import WhyChoise from "../../Components/whyChoise/whyChoise";
 import Courses from "../../Components/Courses/Courses";
 import Blogs from "../../Components/Blogs/Blogs";
 import Teachers from "../../Components/teacher/teachers";
+import ContactForm from "../../Components/contactForm/contactForm";
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
         <Blogs />
         <Teachers />
         <JeromeBell />
+        <ContactForm />
       </section>
 
       <footer>
