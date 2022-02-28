@@ -22,6 +22,7 @@ function Author() {
             <img
               className="video__img"
               src={authorImgJpg}
+              alt="video imggg"
               onClick={e => {
                 authorVideo.current.innerHTML = authorVideoLink;
               }}
