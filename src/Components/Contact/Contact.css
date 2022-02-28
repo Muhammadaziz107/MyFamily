@@ -228,6 +228,11 @@
   .fasebok {
     margin: 0;
   }
+
+  .contact {
+    background-color: #fff;
+    height: 100%;
+  }
   .addres {
     width: 80%;
     text-align: center;
