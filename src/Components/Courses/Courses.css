@@ -58,7 +58,7 @@
   border-radius: 5px;
   background: #ffffff;
   margin: 0 20px 20px 0;
-  text-align: left;
+  text-align: center;
 }
 .card:nth-child(even) {
   margin-right: 0;
