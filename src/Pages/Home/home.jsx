@@ -27,7 +27,9 @@ function Home() {
         <Blogs />
         <Teachers />
         <JeromeBell />
-        <ContactForm />
+        <div className="contact-form-component">
+          <ContactForm />
+        </div>
       </section>
 
       <footer>

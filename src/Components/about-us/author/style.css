@@ -28,7 +28,7 @@
 }
 
 .about-author__title {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
@@ -44,7 +44,7 @@
 }
 
 .about-author__description {
-  font-family: 'HelveticaNeueCyr';
+  font-family: "HelveticaNeueCyr";
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -94,12 +94,12 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border: none;
   border-radius: 61px;
-  background-color: #C9AF89;
+  background-color: #c9af89;
   padding: 16px 25px;
-  font-family: 'HelveticaNeueCyr';
+  font-family: "HelveticaNeueCyr";
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
@@ -110,7 +110,7 @@
 @media screen and (max-width: 768px) {
   .video__btn {
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     top: 157px;
     font-size: 14px;
     line-height: 14px;

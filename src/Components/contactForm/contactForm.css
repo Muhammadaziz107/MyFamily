@@ -94,8 +94,29 @@
     position: fixed;
     width: 320px;
     margin: 0;
+    margin-left: 20px;
+    top: 20%;
+    z-index: 1000;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contactForm__wrapper {
+    position: fixed;
+    width: 320px;
+    margin: 0;
+    margin-left: 10px;
+    top: 20%;
+    z-index: 1000;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .contactForm__wrapper {
+    position: fixed;
+    width: 320px;
+    margin: 0;
     margin-left: 3px;
-    /* position: absolute; */
     top: 20%;
     z-index: 1000;
   }

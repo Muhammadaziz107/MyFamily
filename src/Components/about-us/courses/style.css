@@ -53,9 +53,8 @@
   font-weight: 700;
   line-height: 50px;
   color: #ffffff;
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 5px;
+  text-align: left;
+  margin: 10px auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,7 +72,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  text-align: center;
   color: #ffffff;
   width: 530px;
   margin: 0 auto;
@@ -342,7 +340,7 @@
   width: 187px;
   margin: 0 auto;
   margin-top: 19px;
-  padding: 18px 40px;
+  padding: 18px 30px;
   background-color: #a76bc7;
   border-radius: 50px;
   border: none;

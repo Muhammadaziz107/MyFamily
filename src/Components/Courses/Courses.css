@@ -31,9 +31,17 @@
   border-radius: 50px;
   padding: 17px 40px;
   background: #a76bc7;
-  border: none;
+  border: 1px solid #a76bc7;
   color: #ffffff;
+  font-weight: 550;
   text-decoration: none;
+}
+
+.courses__btn:hover {
+  background-color: #fff;
+  color: #a76bc7;
+  border: 1px solid #a76bc7;
+  transition: 0.5s;
 }
 
 .card-wrapper {
@@ -226,6 +234,7 @@
 @media only screen and (max-width: 420px) {
   .courses .container {
     width: 88%;
+    padding-bottom: 50px;
   }
 
   .card {

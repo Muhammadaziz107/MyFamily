@@ -103,9 +103,18 @@
   color: #ffffff;
   padding: 17px 40px;
   background: #a76bc7;
+  border: 1px solid #a76bc7;
   border: none;
   float: right;
 }
+
+.contact__btn:hover {
+  background-color: #fff;
+  color: #a76bc7;
+  border: 1px solid #a76bc7;
+  transition: 0.5s;
+}
+
 .contact__form-wrapper {
   height: 470px;
   margin-bottom: 20px;

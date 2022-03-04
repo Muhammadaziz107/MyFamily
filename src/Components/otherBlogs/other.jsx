@@ -1,10 +1,12 @@
 import otherBlogs from "../../Assets/Images/otherBlogs.jpg";
+import { NavLink } from "react-router-dom";
 import "./other.css";
 function Other() {
   return (
     <div className="other-blogs-wrapper">
       <div className="container">
         <div className="other-blogs">
+          {/* ===== */}
           <div className="other-blogs__box">
             <img
               className="other-blogs__img"
@@ -23,6 +25,7 @@ function Other() {
               <p className="other-blogs__box__time">4 min o'qiladi</p>
             </div>
           </div>
+          {/* ========= */}
           <div className="other-blogs__box">
             <img
               className="other-blogs__img"
@@ -41,6 +44,7 @@ function Other() {
               <p className="other-blogs__box__time">4 min o'qiladi</p>
             </div>
           </div>
+          {/* ==== */}
           <div className="other-blogs__box">
             <img
               className="other-blogs__img"
@@ -59,6 +63,7 @@ function Other() {
               <p className="other-blogs__box__time">4 min o'qiladi</p>
             </div>
           </div>
+          {/* ==== */}
           <div className="other-blogs__box">
             <img
               className="other-blogs__img"
@@ -77,6 +82,7 @@ function Other() {
               <p className="other-blogs__box__time">4 min o'qiladi</p>
             </div>
           </div>
+          {/* === */}
           <div className="other-blogs__box">
             <img
               className="other-blogs__img"
@@ -95,6 +101,7 @@ function Other() {
               <p className="other-blogs__box__time">4 min o'qiladi</p>
             </div>
           </div>
+          {/* ==== */}
           <div className="other-blogs__box">
             <img
               className="other-blogs__img"
@@ -113,6 +120,9 @@ function Other() {
               <p className="other-blogs__box__time">4 min o'qiladi</p>
             </div>
           </div>
+          <NavLink to="" className="courses__btn other-blogs__btn">
+            Barcha kurslar
+          </NavLink>
         </div>
       </div>
     </div>

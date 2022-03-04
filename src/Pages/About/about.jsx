@@ -21,7 +21,9 @@ function About() {
           <SchoolAim />
           <Courses />
           <Author />
-          <ContactForm />
+          <div className="contact-form-component">
+            <ContactForm />
+          </div>
         </section>
         <footer>
           <Footer />
