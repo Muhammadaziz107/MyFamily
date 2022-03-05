@@ -65,7 +65,7 @@ function Courses() {
 
   return (
     <>
-      <section className="our-courses">
+      <section className="our-courses" id="all-courses-id">
         <div className="courses container">
           <h2 className="courses__title">BIZNING KURSLAR</h2>
           <p className="courses__sub-title">

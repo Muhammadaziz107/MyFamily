@@ -37,7 +37,7 @@ function Blogs() {
               );
             })}
           </ul>
-          <Link to={"home"} className="courses__btn">
+          <Link to="/blogs" className="courses__btn">
             Barcha kurslar
           </Link>
         </div>

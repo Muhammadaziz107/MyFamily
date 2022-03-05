@@ -2,7 +2,7 @@
 import "./Courses.css";
 // import pexels from '../../Assets/Images/pexels-monstera-5997151.png'
 import { courses } from "../data";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 let s = courses.slice(0, 4);
 s.reverse();
@@ -35,9 +35,9 @@ function Courses() {
               );
             })}
           </ul>
-          <Link to="" className="courses__btn">
+          <NavLink to="/about" href="#all-courses-id" className="courses__btn">
             Barcha kurslar
-          </Link>
+          </NavLink>
         </div>
       </section>
     </>
