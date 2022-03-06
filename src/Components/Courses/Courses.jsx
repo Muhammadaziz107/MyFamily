@@ -1,6 +1,5 @@
-// import { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import "./Courses.css";
-// import pexels from '../../Assets/Images/pexels-monstera-5997151.png'
 import { courses } from "../data";
 import { NavLink } from "react-router-dom";
 
@@ -8,6 +7,23 @@ let s = courses.slice(0, 4);
 s.reverse();
 
 function Courses() {
+  const [data, setData] = useState([]);
+
+  useEffect(async () => {
+    const res = await fetch("https://familyuz.herokuapp.com/api/v1/courseData", {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (res.status == 200) {
+      const request = await res.json();
+      setData(request);
+    }
+  }, []);
+
+  useEffect(() => {}, [data]);
   return (
     <>
       <section className="courses">

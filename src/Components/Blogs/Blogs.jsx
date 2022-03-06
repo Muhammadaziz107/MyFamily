@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Blogs.css";
 import { Link } from "react-router-dom";
 
@@ -6,6 +6,23 @@ import { blogs } from "../data";
 let blog = blogs.slice(0, 3);
 
 function Blogs() {
+  const [data, setData] = useState([]);
+
+  useEffect(async () => {
+    const res = await fetch("https://familyuz.herokuapp.com/api/v1/blogs", {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (res.status == 200) {
+      const request = await res.json();
+      setData(request);
+    }
+  }, []);
+
+  useEffect(() => {}, [data]);
   return (
     <>
       <section className="blog">

@@ -1,6 +1,6 @@
 import "./style.css";
 import { Link } from "react-router-dom";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 function Courses() {
   const crsItem = useRef();
@@ -62,6 +62,24 @@ function Courses() {
       img: "farzandTarbiyasi",
     },
   ];
+
+  const [data, setData] = useState([]);
+
+  useEffect(async () => {
+    const res = await fetch("https://familyuz.herokuapp.com/api/v1/courseData", {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (res.status == 200) {
+      const request = await res.json();
+      setData(request);
+    }
+  }, []);
+
+  useEffect(() => {}, [data]);
 
   return (
     <>
