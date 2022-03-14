@@ -6,6 +6,8 @@
   font-style: normal;
   font-weight: 400;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;

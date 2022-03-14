@@ -1,29 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Courses.css";
-import { courses } from "../data";
 import { NavLink } from "react-router-dom";
 
-let s = courses.slice(0, 4);
-s.reverse();
 
 function Courses() {
-  const [data, setData] = useState([]);
+  const [courses, setCourses] = useState([]);
+  let s = courses.slice(0, 4);
+  s.reverse();
+  
+fetch('https://familyuz.herokuapp.com/api/v1/courseData')
+.then(res => res.json())
+.then(res => setCourses(res.data))
 
-  useEffect(async () => {
-    const res = await fetch("https://familyuz.herokuapp.com/api/v1/courseData", {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    });
-
-    if (res.status == 200) {
-      const request = await res.json();
-      setData(request);
-    }
-  }, []);
-
-  useEffect(() => {}, [data]);
   return (
     <>
       <section className="courses">
@@ -35,15 +23,15 @@ function Courses() {
           </p>
 
           <ul className="card-wrapper">
-            {s.map(e => {
+          {s.map(e => {
               return (
-                <li key={e.id} className="card">
+                <li key={e.course_id} id={e.course_id} className="card">
                   <div className="img-wrapper">
-                    <span className="card__btn">{e.author}</span>
-                    <img src={e.image} alt="e" className="card__img" />
+                    <span className="card__btn">{e.teacher_name}</span>
+                    <img src={e.course_img} alt={e.teacher_name} className="card__img" />
                   </div>
-                  <h3 className="card__title">{e.title}</h3>
-                  <p className="card__description">{e.subtitle}</p>
+                  <h3 className="card__title">{e.course_title}</h3>
+                  <p className="card__description">{e.course_info}</p>
                   <a href="/" className="card__link">
                     Batafsil
                   </a>
@@ -51,7 +39,7 @@ function Courses() {
               );
             })}
           </ul>
-          <NavLink to="/about" href="#all-courses-id" className="courses__btn">
+          <NavLink to="/about" className="courses__btn">
             Barcha kurslar
           </NavLink>
         </div>

@@ -4,7 +4,7 @@ import introImg from "../../../Assets/Images/about-intro.jpg";
 function AboutIntro() {
   return (
     <>
-      <div className="about_intro">
+      <div className="about_intro">s
         <div className="about_intro-content container">
           <div className="intro_info">
             <h2 className="intro_title">

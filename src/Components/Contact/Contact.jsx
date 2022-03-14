@@ -18,6 +18,31 @@ function Contact() {
     }
   }
 
+  function len() {
+    let phon = document.getElementById("selectdirect");
+    if (phon.value) {
+      phon.style.color = "#000000";
+    } else {
+      phon.style.color = "#CCCCCC";
+    }
+  }
+
+  const onSubmitForm = async (e) => {
+    e.preventDefault()
+    try {
+      const body = {
+       
+      }
+      await fetch("http://localhost:9999/api/branchs", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body)
+      })
+    } catch (error) {
+      console.error(error.message);
+    }
+  }
+
   return (
     <>
       <section className="contact">
@@ -44,7 +69,7 @@ function Contact() {
               <p className="contact__subtitle">
                 Telefon raqamingizni qoldiring va sizga qo'ng'iroq qiling
               </p>
-              <form className="contact__form">
+              <form className="contact__form" onSubmit={onSubmitForm}>
                 <input
                   type="text"
                   className="contact__input"
@@ -68,9 +93,13 @@ function Contact() {
                   type="text"
                   className="contact__input contact__select"
                   placeholder="Yo’nalish"
-                  required
+                  id="selectdirect"
+                  required onChange={len} 
                 >
-                  <option value="Yonalish">Yonalish</option>
+                  <option value="Yonalish" disabled>Yonalish</option>
+                  <option value="Yonalish">Oila</option>
+                  <option value="Yonalish">Bola</option>
+                  <option value="Yonalish">Ayol</option>
                 </select>
                 <button type="submit" className="contact__btn">
                   Kursga yozilish

@@ -5,6 +5,9 @@
   padding-bottom: 68px;
 }
 
+.other-blogs__btn{
+text-align: center;
+}
 .courses {
   background-image: url("../../../Assets/Images/bg-pixell.svg");
   background-color: #c9af89;

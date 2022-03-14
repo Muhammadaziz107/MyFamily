@@ -1,28 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "./Blogs.css";
 import { Link } from "react-router-dom";
+import moment from "moment";
+import "moment/locale/uz-latn";
 
-import { blogs } from "../data";
-let blog = blogs.slice(0, 3);
 
 function Blogs() {
-  const [data, setData] = useState([]);
 
-  useEffect(async () => {
-    const res = await fetch("https://familyuz.herokuapp.com/api/v1/blogs", {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    });
+  const [blogs, setBlogs] = useState([]);
+blogs.reverse();
+  let blog = blogs.slice(0, 3);
 
-    if (res.status == 200) {
-      const request = await res.json();
-      setData(request);
-    }
-  }, []);
+  
 
-  useEffect(() => {}, [data]);
+
+useEffect(() => {
+  fetch('https://familyuz.herokuapp.com/api/v1/blogs')
+  .then(res => res.json())
+  .then(res => setBlogs(res.data))
+},[blogs])
   return (
     <>
       <section className="blog">
@@ -34,20 +30,20 @@ function Blogs() {
           </p>
 
           <ul className="blog-card-wrapper">
-            {blog.map(e => {
+            {blog && blog.map(e => {
               return (
-                <li key={e.id} className="blog-card">
+                <li key={e.blog_id} id={e.blog_id} className="blog-card">
                   <img
-                    src={e.img}
+                    src={e.blog_img}
                     alt="e"
                     className="blog-card__img"
                     width="100%"
                     height="100%"
                   />
                   <span className="text-wrapper">
-                    <h3 className="blog-card__title">{e.title}</h3>
-                    <time href="" className="blog-card__link">
-                      {e.time} soat oldin
+                    <h3 className="blog-card__title">{e.blog_title}</h3>
+                    <time className="blog-card__link">
+                    {moment(e.blog_date).endOf('hour').fromNow()}
                     </time>
                   </span>
                 </li>

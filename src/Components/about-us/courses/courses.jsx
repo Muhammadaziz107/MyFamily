@@ -71,7 +71,7 @@ function Courses() {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-    });
+    })
 
     if (res.status == 200) {
       const request = await res.json();

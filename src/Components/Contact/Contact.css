@@ -96,7 +96,9 @@
   line-height: 17px;
   color: #cccccc;
 }
-
+.contact__select option{
+  color: #000;
+}
 .contact__btn {
   font-weight: 550;
   border-radius: 100px;

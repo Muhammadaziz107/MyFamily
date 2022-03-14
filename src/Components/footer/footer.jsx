@@ -51,7 +51,9 @@ function Footer() {
           </div>
 
           <div className="footer__adress">
-            <h4 className="footer__adress__phone">+{phoneNumber.number}</h4>
+            <h4 className="footer__adress__phone"><a href={"tel:+" + phoneNumber.number}>
+                    +{phoneNumber.number}
+                  </a></h4>
             <p className="footer__adress__address">
               Toshkent shahri, Amir Temur ko'chasi, 1-uy
             </p>
